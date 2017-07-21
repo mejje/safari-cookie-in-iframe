@@ -14,14 +14,11 @@
     <script src="//cdn.jsdelivr.net/jquery.cookie/1.4.0/jquery.cookie.min.js"></script>
 
     <script>
-        var is_safari = navigator.userAgent.indexOf("Safari") > -1; // safari detection
-        if (is_safari) {
             if (!$.cookie('fixed')) {
                 $.cookie('fixed', 'fixed', { expires: 365, path: '/' }); // 1 year
                 window.location.replace("http://vit-demos.appspot.com/_safari_fix.html?verbose"); // comment or delete this line
                 //window.location.replace("http://vit-demos.appspot.com/_safari_fix.html"); // uncomment this line
             }
-        }
     </script>
 
 </head>
